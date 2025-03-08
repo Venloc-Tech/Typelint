@@ -1,13 +1,9 @@
 <h1 align="center">Typelint</h1>
 
----
-
 ## What is Typelint
 Typelint is the set of recommended formatting and linting rules for JavaScript and TypeScript applications and libraries, developed by `Venloc`. This package consolidates best practices from various communities and rule sets, ensuring your codebase is consistent, clean, and easy to maintain. 
 
 For more detailed insights into the rules currently used for linting and formatting, please refer to the sections below.
-
----
 
 ## Table of Contents
 
@@ -17,8 +13,6 @@ For more detailed insights into the rules currently used for linting and formatt
 - [Supported Rules](#supported-rules)
 - [Contributing](#contributing)
 - [License](#license)
-
----
 
 ## Installation
 
@@ -43,8 +37,6 @@ yarn add -d @venloc-tech/typelint
 ```bash
 pnpm add -d @venloc-tech/typelint
 ```
-
----
 
 ## Configuration
 After installation, you can integrate Typelint into your project by extending your Typescript-Eslint configuration. If you need to override or customize any rules, simply add your overrides in the rules section of your ESLint configuration.
@@ -77,8 +69,6 @@ Also, recommend add this line to your `package.json`
 "eslintConfig": "eslint.config.ts",
 ```
 
----
-
 ## Usage
 Once configured, you can run ESLint as you normally would. For example:
 #### Using bun:
@@ -98,16 +88,12 @@ yarn dlx eslint --fix "src/**/*.{js,ts}"
 pnpm dlx eslint --fix "src/**/*.{js,ts}"
 ```
 
----
-
 ## Supported Rules
 Typelint brings together the best practices from various popular rule sets:
 - **eslint/js**: Enforces standard JavaScript linting rules.
 - **stylistic/js**: Provides guidelines for consistent code style in JavaScript.
 - **stylistic/jsx**: Ensures consistent formatting and style for JSX in React projects.
 - **typescript-eslint**: Applies robust linting and formatting for TypeScript projects.
-
----
 
 ## Contributing
 We welcome contributions from the community! If you find a bug or have suggestions for improvements, please submit an issue or a pull request via our GitHub repository.
@@ -119,8 +105,6 @@ We welcome contributions from the community! If you find a bug or have suggestio
 5. **Submit a pull request**
 
 Please ensure your code adheres to the established linting rules and that all tests pass before submitting your PR.
-
----
 
 ## License
 Typelint is open source and available under the [Apache License 2.0](https://github.com/Venloc-Tech/Typelint/blob/main/LICENSE).
