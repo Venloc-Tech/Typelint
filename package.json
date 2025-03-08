@@ -2,10 +2,38 @@
   "name": "@venloc-tech/typelint",
   "module": "index.ts",
   "type": "module",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "Apache-2.0",
   "description": "Rules and recommendations for your typescript applications and libraries linting and formatting \uD83D\uDE80",
   "author": "Shiz CEO",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".":  {
+      "default": "./dist/index.js",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./eslint":  {
+      "default": "./dist/eslint/index.js",
+      "import": "./dist/eslint/index.js",
+      "require": "./dist/eslint/index.cjs",
+      "types": "./dist/eslint/index.d.ts"
+    },
+    "./stylistic":  {
+      "default": "./dist/stylistic/index.js",
+      "import": "./dist/stylistic/index.js",
+      "require": "./dist/stylistic/index.cjs",
+      "types": "./dist/stylistic/index.d.ts"
+    },
+    "./typelint":  {
+      "default": "./dist/typelint/index.js",
+      "import": "./dist/typelint/index.js",
+      "require": "./dist/typelint/index.cjs",
+      "types": "./dist/typelint/index.d.ts"
+    }
+  },
   "files": [
     "dist",
     "package.json",
