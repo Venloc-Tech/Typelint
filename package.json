@@ -1,0 +1,40 @@
+{
+  "name": "@venloc-tech/typelint",
+  "module": "index.ts",
+  "type": "module",
+  "version": "0.0.0",
+  "license": "Apache-2.0",
+  "description": "Rules and recommendations for your typescript applications and libraries linting and formatting \uD83D\uDE80",
+  "author": "Shiz CEO",
+  "files": [
+    "dist",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "eslintConfig": "eslint.config.ts",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Venloc-Tech/Typelint.git"
+  },
+  "scripts": {
+    "lint": "bunx --bun eslint --fix \"src/**/*.{js,ts}\" \"src/*.{js,ts}\"",
+    "build": "bun scripts/build.ts"
+  },
+  "devDependencies": {
+    "@eslint/compat": "^1.2.7",
+    "@eslint/js": "^9.21.0",
+    "@stylistic/eslint-plugin-js": "^4.2.0",
+    "@stylistic/eslint-plugin-jsx": "^4.2.0",
+    "@types/bun": "latest",
+    "eslint": "^9.21.0",
+    "jiti": "^2.4.2",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.26.0"
+  }
+}
