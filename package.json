@@ -53,11 +53,13 @@
     "lint": "bunx --bun eslint --fix \"src/**/*.{js,ts}\" \"src/*.{js,ts}\"",
     "build": "bun scripts/build.ts"
   },
-  "devDependencies": {
+  "dependencies": {
     "@eslint/compat": "^1.2.7",
     "@eslint/js": "^9.21.0",
     "@stylistic/eslint-plugin-js": "^4.2.0",
-    "@stylistic/eslint-plugin-jsx": "^4.2.0",
+    "@stylistic/eslint-plugin-jsx": "^4.2.0"
+  },
+  "devDependencies": {
     "@types/bun": "latest",
     "eslint": "^9.21.0",
     "jiti": "^2.4.2",

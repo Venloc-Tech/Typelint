@@ -23,19 +23,19 @@ To get started, install Typelint as a development dependency using your favorite
 
 #### Using bun:
 ```bash
-bun add -d @venloc-tech/typelint
+bun add -d @venloc-tech/typelint eslint typescript-eslint
 ```
 #### Using npm:
 ```bash
-npm install --save-dev @venloc-tech/typelint
+npm install --save-dev @venloc-tech/typelint eslint typescript-eslint
 ```
 #### Using yarn:
 ```bash
-yarn add -d @venloc-tech/typelint
+yarn add -d @venloc-tech/typelint eslint typescript-eslint
 ```
 #### Using pnpm:
 ```bash
-pnpm add -d @venloc-tech/typelint
+pnpm add -d @venloc-tech/typelint eslint typescript-eslint
 ```
 
 ## Configuration
