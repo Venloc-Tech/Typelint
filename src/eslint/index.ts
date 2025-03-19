@@ -30,11 +30,6 @@ export const EslintVenlocRecommended: ConfigWithExtends = {
     "no-unused-vars": "warn",
     "use-isnan": "error",
     /* Suggestions */
-    "capitalized-comments": [
-      "warn",
-      "always",
-      { ignoreInlineComments: true, ignoreConsecutiveComments: true },
-    ],
     eqeqeq: ["error", "smart"],
     "guard-for-in": "error",
     "no-alert": "error",
