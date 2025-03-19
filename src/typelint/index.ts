@@ -15,7 +15,7 @@ export const TypelintVenlocRecommended: ConfigWithExtends = {
     "@typescript-eslint/no-array-delete": "error",
     "@typescript-eslint/no-duplicate-enum-values": "error",
     "@typescript-eslint/no-duplicate-type-constituents": "warn",
-    "@typescript-eslint/no-explicit-any": ["warn", { ignoreRestArgs: true }],
+    // "@typescript-eslint/no-explicit-any": ["warn", { ignoreRestArgs: true }],
     "@typescript-eslint/no-extra-non-null-assertion": "error",
     "@typescript-eslint/no-import-type-side-effects": "error",
     "@typescript-eslint/no-inferrable-types": "warn",
