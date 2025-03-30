@@ -9,9 +9,7 @@ import { TypelintVenlocRecommended } from "./typelint/index.js";
 import { EslintVenlocRecommended } from "./eslint/index.js";
 
 
-export const allTypescriptFiles: ConfigWithExtends = {
-  files: ["**/*.ts", "**/*.tsx", "**/*.mts", "**/*.mtsx", "**/*.cts", "**/*.ctsx"],
-};
+export const allTypescriptFiles: ConfigWithExtends["files"] = ["**/*.ts", "**/*.tsx", "**/*.mts", "**/*.mtsx", "**/*.cts", "**/*.ctsx"]
 
 const initialParserOptions: ParserOptions = { 
   projectService: true,
@@ -33,7 +31,6 @@ export * from "./typelint/index.js";
 export * from "./stylistic/index.js";
 
 export const VenlocRecommended: InfiniteDepthConfigWithExtends[] = [
-  allTypescriptFiles,
   EslintVenlocRecommended,
   TypelintVenlocRecommended,
   StylisticJsVenlocRecommended,
