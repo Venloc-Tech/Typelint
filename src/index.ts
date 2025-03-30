@@ -9,7 +9,7 @@ import { TypelintVenlocRecommended } from "./typelint/index.js";
 import { EslintVenlocRecommended } from "./eslint/index.js";
 
 
-export const allTypescriptFiles: ConfigWithExtends["files"] = ["**/*.ts", "**/*.tsx", "**/*.mts", "**/*.mtsx", "**/*.cts", "**/*.ctsx"]
+export const allTypescriptFiles: ConfigWithExtends["files"] = ["**/*.ts", "**/*.tsx", "**/*.mts", "**/*.mtsx", "**/*.cts", "**/*.ctsx"];
 
 const initialParserOptions: ParserOptions = { 
   projectService: true,
@@ -19,7 +19,7 @@ const initialParserOptions: ParserOptions = {
 export const setParserOptions = (parserOptions: ParserOptions = initialParserOptions): InfiniteDepthConfigWithExtends => {
   return {
     languageOptions: {
-      parserOptions: parserOptions,
+      parserOptions: { ...initialParserOptions, ...parserOptions },
     },
   };
 };
