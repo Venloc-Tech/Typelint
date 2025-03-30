@@ -58,7 +58,7 @@ export default tseslint.config({
     },
     plugins: {
       // Your plugins..   
-    }
+    },
     // Add typrscript files
     files: allTypescriptFiles,
     // Setup parser options
