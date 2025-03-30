@@ -44,12 +44,13 @@ Create or update your eslint.config.ts file with the following:
 
 ```ts
 // eslint.config.ts
-import { VenlocRecommended } from '@venloc-tech/typelint';
 import tseslint from 'typescript-eslint';
+import path from "path"
 
-export default tseslint.config(
-  VenlocRecommended, 
-  {
+import { VenlocRecommended, allTypescriptFiles, setIgnoreFiles, setParserOptions } from '@venloc-tech/typelint';
+
+export default tseslint.config({
+    extends: VenlocRecommended,
     // Custom overrides go here
     rules: {
       // For example, disable the rule for console logs:
@@ -57,13 +58,18 @@ export default tseslint.config(
     },
     plugins: {
       // Your plugins..   
-    }
+    },
+    // Add typrscript files
+    files: allTypescriptFiles,
+    // Setup parser options
+    ...setParserOptions({ project: "./tsconfig.eslint.json" }),
+    // Setup .gitignore
+    ...setIgnoreFiles(path.join(process.cwd(), ".gitignore"))
     // You can also extend additional settings if needed
-  }
-);
+});
 ```
 
-Also, recommend add this line to your `package.json`
+Also, recommend add this line to your `package.json` for better **_Webstorm_** integration.
 
 ```json
 "eslintConfig": "eslint.config.ts",
