@@ -47,7 +47,7 @@ Create or update your eslint.config.ts file with the following:
 import tseslint from 'typescript-eslint';
 import path from "path"
 
-import { VenlocRecommended, setIgnoreFiles, setParserOptions } from '@venloc-tech/typelint';
+import { VenlocRecommended, allTypescriptFiles, setIgnoreFiles, setParserOptions } from '@venloc-tech/typelint';
 
 export default tseslint.config({
     extends: VenlocRecommended,
@@ -59,6 +59,8 @@ export default tseslint.config({
     plugins: {
       // Your plugins..   
     }
+    // Add typrscript files
+    files: allTypescriptFiles,
     // Setup parser options
     ...setParserOptions({ project: "./tsconfig.eslint.json" }),
     // Setup .gitignore
