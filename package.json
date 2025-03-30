@@ -2,7 +2,7 @@
   "name": "@venloc-tech/typelint",
   "module": "index.ts",
   "type": "module",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "license": "Apache-2.0",
   "description": "Rules and recommendations for your typescript applications and libraries linting and formatting \uD83D\uDE80",
   "author": "Shiz CEO",
